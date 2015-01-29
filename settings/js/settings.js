@@ -474,7 +474,7 @@ var imageUploader = {
             return;
         }
         if (file.size > imageUploader.maxFileSize * 1024 * 1024) {
-            imageUploader.status.fail({ title: '文件太大', description: '(文件最大不超过: ' + imageUploader.maxFileSize + 'MB)' });
+            imageUploader.status.fail({ title: '文件太大', description: '(文件最大不超过' + imageUploader.maxFileSize + 'MB)' });
             return;
         }
         imageUploader.uploadFile(file);
